@@ -4,15 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0B6A61"
+    android:padding="2dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <AnalogClock
         android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/bangladesh_Id"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/bangladesh_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/bangladesh_icon"
+        style="@style/Widget.AppCompat.Button.Colored"
+
+        />
+    <Button
+        android:id="@+id/pakistan_Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pakistan_name"
+        android:drawableLeft="@drawable/pakistan_icon"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"
+
+        />
+    <Button
+        android:id="@+id/turkey_Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/turkey_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/turkey_icon"
+        style="@style/Widget.AppCompat.Button.Colored"
+
+        />
 
 </LinearLayout>
